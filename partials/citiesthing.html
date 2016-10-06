@@ -1,0 +1,21 @@
+	<div id="cities">
+		<ul id="tempsselector">
+			<li class="tempsforyou"ng-click="onClick(temps,kind,0)" ng-repeat="kind in temps">
+				<span class="fontweather1 fontmidlarge">{{kind}}</span>
+			</li>
+		</ul>
+		<div id="weatherinfo">
+			<ul id="tempscities">
+				<li ng-click="onClick(cities,city,1)" class="citiesplace" ng-repeat="city in cities">
+					<span class="fontweather1 fontlarge">{{city.name}}</span>
+					<span class="citytemps fontweather2 fontmidlarge">{{city.forecast[0].current[tempval]}}{{temps[tempval]}}</span>
+				</li>
+			</ul>
+			<ul id="forecastlist">
+			<li class="daylist" ng-repeat="tempers in cities[selectedindex].forecast">
+				<span class="fontweather1 fontlarge">{{tempers.date}}</span>
+				<span class="citytemps fontweather2 fontmidlarge">{{tempers.high[tempval]}}{{temps[tempval]}}/{{tempers.low[tempval]}}{{temps[tempval]}}</span>
+			</li>
+			</ul>
+		</div>
+	</div>

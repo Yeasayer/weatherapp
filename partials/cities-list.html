@@ -1,0 +1,13 @@
+	<div id="cities">
+		<ul id="tempsselector">
+			<li ng-repeat="kind in temps">
+				<span class="fontweather1 fontmidlarge">{{kind}}</span>
+			</li>
+		</ul>
+		<tempscities>
+			<li class="fuckyou" ng-repeat="city in cities">
+				<span class="fontweather1 fontlarge">{{city.name}}</span>
+				<span class="fontweather2 fontmidlarge">{{city.forecast[0].current.fahrenheit}}</span>
+			</li>
+		</tempscities>
+	</div>

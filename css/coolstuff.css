@@ -1,0 +1,132 @@
+@font-face{
+	font-family: 'DisposableDigi BB';
+	src: url("/css/fonts/DisposableDigiBB.otf");
+}
+body{
+	min-width: 720px;
+	width: 100%;
+	height:100%;
+	margin: 0px;
+	background-color: lightblue;
+}
+canvas{
+	position: absolute;
+}
+button{
+	background-color: transparent;
+	border: 0px;
+	color: white;
+}
+header{
+	position: fixed;
+	top:0px;
+	width:100%;
+	height:102px;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+/* Note this is incrediably lazy */
+a{
+ z-index:999; /* BOLD PLAN! */
+ display: block;
+}
+ul{
+	list-style: none;
+}
+div ul, #aboutscreed{
+	min-width: 400px;
+	background-color: black;
+	border:8px solid white;
+	padding:12px;
+	color:white;
+	max-width: 50%;
+	position: relative;
+}
+#aboutscreed{
+	text-align: center;
+	margin: 20px auto;
+}
+.fakemargin{
+	position: relative;
+	width:100%;
+	top:100px;
+	height:120px;
+}
+#weatherinfo{
+	display: flex;
+	justify-content:center;
+}
+#weatherinfo ul{
+	display: inline-block;
+	position: relative;
+	margin:20px auto;
+	width: 60%;
+	max-width: 600px;
+}
+#tempsselector{
+	display: flex;
+	position: relative;
+	margin: auto;
+}
+#tempsselector li, header li{
+	justify-content:left;
+	display: inline-block;
+	margin: 12px auto;
+}
+#tempscities, .citiesplace, li{
+	position: relative;
+}
+span.fontweather1{
+	position: relative;
+	left:10%;
+}
+.tempsforyou, .citiesplace{
+	cursor: pointer;
+}
+#navigation{
+	right:0px;
+	width:100%;
+	position: relative;
+	display: flex;
+	justify-content:center;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.citiesplace{
+	opacity: 0;
+}
+#tempscities{
+	height: 330px;
+	overflow: scroll;
+}
+.daylist, .daylist *{
+	opacity: 1;
+}
+#tempscities span.fontweather2,#forecastlist span.fontweather2{
+	position: absolute;
+	right:10%;
+	bottom: 8px;
+}
+.fontweather1{
+	font-family: 'Montserrat', sans-serif;
+}
+.fontlarge{
+	font-size: 48px;
+}
+.fontmid{
+	font-size: 24px;
+}
+.fontmidlarge{
+	font-size: 36px;
+}
+.fontextralarge{
+	font-size: 64px;
+}
+.fontweather2{
+	font-family: 'Open-Sans', sans-serif;
+}
+.fontweather3{
+	font-family: 'DisposableDigi BB';
+}

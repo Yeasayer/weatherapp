@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html ng-app="citiesListApp">
+<head>
+	<title>Hola Mundo!</title>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="/css/coolstuff.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet"> 
+	<script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="/js/angular.js"></script>
+	<script type="text/javascript" src="/js/angular-route.js"></script>
+	<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+	<script type="text/javascript" src="/js/whethertheweather.js"></script>
+	<base href="/">
+</head>
+<body >
+	<canvas id="funtimes" width='1280' height="720"></canvas>
+	<header ng-controller="headerController as header">
+		<ul id="navigation">
+			<li ng-repeat="option in options">
+				<a class="fontweather3 fontlarge" href="{{option[1]}}">{{option[0]}}</a>
+			</li>
+		</ul>
+	</header>
+	<div class="fakemargin"></div>
+	<div ng-view></div>
+</body>
+</html>
