@@ -136,9 +136,10 @@
 		$scope.temps =
 		{
 			"fahrenheit":"°F",
-			"celsius":"°C",
 			"kelvin":"°K",
-			"rankine":"°R"
+			"rankine":"°R",
+			"celsius":"°C"
+			
 		}
 		$scope.tempval = 'fahrenheit';
 		$scope.selectedindex = 0;
